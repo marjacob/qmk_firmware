@@ -1,0 +1,7 @@
+KEY_LOCK_ENABLE  = no
+MOUSEKEY_ENABLE  = yes
+TAP_DANCE_ENABLE = yes
+UNICODE_ENABLE   = no
+
+SRC += marjacob.c
+
