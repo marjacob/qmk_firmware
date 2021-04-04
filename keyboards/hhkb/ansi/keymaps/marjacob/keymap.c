@@ -1,7 +1,10 @@
 #include QMK_KEYBOARD_H
 #include "marjacob.h"
 
+#define FN_HHKB MO(_HHKB)
+#define FN_HJKL TG(_HJKL)
 #define FN_MGMT MO(_MGMT)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* clang-format off */
 

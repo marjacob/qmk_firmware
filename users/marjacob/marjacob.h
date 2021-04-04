@@ -4,9 +4,6 @@
 #include "process_keycode/process_tap_dance.h"
 
 #define FN_BASE TO(_BASE)
-#define FN_HHKB MO(_HHKB)
-#define FN_HJKL MO(_HJKL)
-#define FN_MOUS TO(_MOUSE)
 #define TD_LSFT TD(TDI_LSFT)
 #define TD_SCLN TD(TDI_SCLN)
 #define XXXXXXX KC_NO
