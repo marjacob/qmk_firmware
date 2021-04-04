@@ -3,7 +3,6 @@
 #include "quantum.h"
 #include "process_keycode/process_tap_dance.h"
 
-#define FN_BASE TO(_BASE)
 #define TD_LSFT TD(TDI_LSFT)
 #define TD_SCLN TD(TDI_SCLN)
 #define XXXXXXX KC_NO
