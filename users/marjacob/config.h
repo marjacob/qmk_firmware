@@ -1,5 +1,4 @@
-#ifndef USERSPACE_CONFIG_H
-#define USERSPACE_CONFIG_H
+#pragma once
 
 #include "config_common.h"
 
@@ -8,5 +7,3 @@
 
 #undef  PRODUCT
 #define PRODUCT        HHKB
-
-#endif

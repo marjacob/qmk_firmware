@@ -1,7 +1,5 @@
 // vim:et:ts=4:sw=4:sts=4:
-
-#ifndef USERSPACE
-#define USERSPACE
+#pragma once
 
 #include "quantum.h"
 #include "process_keycode/process_tap_dance.h"
@@ -59,6 +57,3 @@ void lsft_reset(qk_tap_dance_state_t *state, void *user);
 void scln_finished(qk_tap_dance_state_t *state, void *user);
 
 void scln_reset(qk_tap_dance_state_t *state, void *user);
-
-#endif
-

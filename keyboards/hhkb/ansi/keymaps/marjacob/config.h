@@ -1,5 +1,4 @@
-#ifndef CONFIG_MARJACOB_H
-#define CONFIG_MARJACOB_H
+#pragma once
 
 #include "../../config.h"
 
@@ -8,6 +7,3 @@
 
 #undef  MOUSEKEY_MAX_SPEED
 #define MOUSEKEY_MAX_SPEED 8
-
-#endif
-
