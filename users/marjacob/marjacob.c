@@ -4,11 +4,9 @@
 #include "process_keycode/process_tap_dance.h"
 
 static userspace_tap lsft_tap_state = { .is_press_action = true, .state = 0 };
-static userspace_tap scln_tap_state = { .is_press_action = true, .state = 0 };
 
 qk_tap_dance_action_t tap_dance_actions[] = {
     [TDI_LSFT] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, lsft_finished, lsft_reset),
-    [TDI_SCLN] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, scln_finished, scln_reset)
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record)
@@ -84,30 +82,3 @@ void lsft_reset(qk_tap_dance_state_t *state, void *user)
 
     lsft_tap_state.state = 0;
 }
-
-void scln_finished(qk_tap_dance_state_t *state, void *user)
-{
-    switch ((scln_tap_state.state = cur_dance(state))) {
-    case SINGLE_HOLD:
-        layer_on(_HJKL);
-        break;
-    default:
-        register_code(KC_SCLN);
-        break;
-    }
-}
-
-void scln_reset(qk_tap_dance_state_t *state, void *user)
-{
-    switch (scln_tap_state.state) {
-    case SINGLE_HOLD:
-        layer_off(_HJKL);
-        break;
-    default:
-        unregister_code(KC_SCLN);
-        break;
-    }
-
-    scln_tap_state.state = 0;
-}
-
