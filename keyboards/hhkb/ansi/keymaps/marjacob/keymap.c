@@ -1,5 +1,3 @@
-// vim:et:ts=4:sw=4:sts=4:
-
 #include QMK_KEYBOARD_H
 #include "marjacob.h"
 

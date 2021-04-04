@@ -1,5 +1,3 @@
-// vim:et:ts=4:sw=4:sts=4:
-
 #include "marjacob.h"
 #include "quantum.h"
 #include "action.h"
