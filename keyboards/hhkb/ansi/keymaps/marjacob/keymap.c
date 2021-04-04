@@ -3,7 +3,6 @@
 
 #define FN_HHKB MO(_HHKB)
 #define FN_HJKL TG(_HJKL)
-#define FN_MGMT MO(_MGMT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* clang-format off */
@@ -19,25 +18,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_HHKB] = LAYOUT(
         _______, KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  , KC_F6  , KC_F7  , KC_F8  , KC_F9  , KC_F10 , KC_F11 , KC_F12 , KC_INS , KC_DEL,
         FN_HJKL, _______, _______, _______, _______, _______, _______, _______, KC_PSCR, KC_SLCK, KC_PAUS, KC_UP  , _______, KC_BSPC,
-        FN_MGMT, KC_VOLD, KC_VOLU, KC_MUTE, KC_LALT, UK_CHKL, KC_MPRV, KC_MNXT, KC_HOME, KC_PGUP, KC_LEFT, KC_RGHT, KC_PENT,
+        _______, KC_VOLD, KC_VOLU, KC_MUTE, KC_LALT, UK_CHKL, KC_MPRV, KC_MNXT, KC_HOME, KC_PGUP, KC_LEFT, KC_RGHT, KC_PENT,
         _______, _______, _______, _______, _______, _______, _______, _______, KC_END , KC_PGDN, KC_DOWN, _______, _______,
                                             _______, _______, KC_MPLY, _______, _______
     ),
 
     [_HJKL] = LAYOUT(
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RESET  ,
         _______, _______, KC_UP  , _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
                                             _______, _______, _______, _______, _______
-    ),
-
-    [_MGMT] = LAYOUT(
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, RESET  ,
-        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, XXXXXXX, XXXXXXX, _______,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-                                            XXXXXXX, _______, KC_ESC , XXXXXXX, XXXXXXX
     ),
 
     [_MOUSE] = LAYOUT(
