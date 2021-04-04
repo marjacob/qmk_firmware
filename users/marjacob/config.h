@@ -2,8 +2,8 @@
 
 #include "config_common.h"
 
-#undef  DESCRIPTION
-#define DESCRIPTION    QMK for HHKB
+#undef  MANUFACTURER
+#define MANUFACTURER Topre Corporation
 
 #undef  PRODUCT
-#define PRODUCT        HHKB
+#define PRODUCT      HHKB
