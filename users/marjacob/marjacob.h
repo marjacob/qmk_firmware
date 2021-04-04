@@ -33,6 +33,7 @@ enum userspace_layer {
     _BASE = 0,
     _HHKB,
     _HJKL,
+    _MGMT,
     _MOUSE,
     _EMPTY
 };
